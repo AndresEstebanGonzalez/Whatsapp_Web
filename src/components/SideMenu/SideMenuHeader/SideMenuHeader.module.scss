@@ -1,2 +1,42 @@
-$secondary-color: #1f2c33;
-$icons-color-grey: #aebac1;
+@import "../../../assets/variables/colors.scss";
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 26.8rem;
+  height: 3.6rem;
+  padding: 0.6rem 1rem;
+  background-color: $chat-secondary-green;
+
+  .leftContainer {
+    display: flex;
+    align-items: center;
+    width: 13rem;
+    .profilePicture {
+      width: 2.5rem;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+    }
+  }
+  .rightContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 11.8rem;
+
+    .icon {
+      width: 1.2rem;
+      aspect-ratio: 1/1;
+      padding: 0.5rem;
+      color: $icon-grey;
+
+      :hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
