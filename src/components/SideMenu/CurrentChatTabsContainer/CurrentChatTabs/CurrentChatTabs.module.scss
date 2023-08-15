@@ -1,0 +1,72 @@
+@import "../../../../assets/variables/colors.scss";
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 26.8rem;
+  height: 4.5rem;
+  .leftContainer {
+    display: flex;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.5rem;
+    padding: 0 0.9rem;
+    .profilePicture {
+      height: 3rem;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+    }
+  }
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 24.7rem;
+    height: 4.5rem;
+    padding-right: 0.9rem;
+    border-top: solid $dark-grey 0.06rem;
+    .topContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 1.3rem;
+      .chatName {
+        font-weight: 400;
+        color: $white;
+      }
+      .lastMessageTime {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: $darker-icon-grey;
+      }
+    }
+    .bottomContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 1.3rem;
+      .bottomLeftContainer {
+        display: flex;
+        flex-direction: row;
+        .checkMark {
+          width: 1.1rem;
+          margin-right: 0.1rem;
+          aspect-ratio: 1/1;
+          color: $light-blue;
+        }
+        .lastMessage {
+          font-weight: 400;
+          color: $darker-icon-grey;
+        }
+      }
+      .thumbTack {
+        height: 0.9rem;
+        aspect-ratio: 1/1;
+        color: $icon-grey;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
