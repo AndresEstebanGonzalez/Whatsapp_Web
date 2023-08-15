@@ -1,6 +1,6 @@
 import styles from "../SideMenuHeader/SideMenuHeader.module.scss";
 
-import ProfilePicture from "../../../assets/images/profile-picture.jpeg";
+import profilePicture from "../../../assets/images/profile-picture.jpeg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,7 +15,7 @@ export default function SideMenuHeader() {
     <div className={styles.mainContainer}>
       <div className={styles.leftContainer}>
         <img
-          src={ProfilePicture}
+          src={profilePicture}
           className={styles.profilePicture}
           alt="Profile Picture"
         />

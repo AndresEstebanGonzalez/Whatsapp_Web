@@ -1,4 +1,5 @@
 @import "../../../assets/variables/colors.scss";
+@import "../../../assets/variables/mixins.scss";
 
 .mainContainer {
   width: 26.8rem;
@@ -6,13 +7,10 @@
   background-color: $primary-black;
 
   .bottomContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column);
   }
   .bottomTextContainer {
-    display: flex;
-    justify-content: center;
+    @include flex;
     margin: 1rem;
     padding-top: 0.6rem;
     border-top: solid $dark-grey 0.06rem;
@@ -28,9 +26,14 @@
       color: $darker-icon-grey;
 
       .lightBlueEncryptedText {
+        padding: 0;
         font-size: 0.75rem;
         color: $light-blue;
+        background: none;
+        border: none;
+        font: inherit;
         cursor: pointer;
+        outline: inherit;
       }
     }
   }

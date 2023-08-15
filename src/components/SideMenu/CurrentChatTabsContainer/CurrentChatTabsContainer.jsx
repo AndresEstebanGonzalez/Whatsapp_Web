@@ -1,4 +1,4 @@
-import styles from "../CurrentChatTabsContainer/CurrentChatTabsContainer.module.scss";
+import styles from "./CurrentChatTabsContainer.module.scss";
 import CurrentChatTabs from "./CurrentChatTabs/CurrentChatTabs";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,9 +13,9 @@ export default function CurrentChatTabsContainer() {
           <FontAwesomeIcon icon={faLock} className={styles.lockIcon} />
           <p className={styles.bottomText}>
             Your personal messages are{" "}
-            <span className={styles.lightBlueEncryptedText}>
+            <button className={styles.lightBlueEncryptedText}>
               end-to-end encrypted
-            </span>
+            </button>
           </p>
         </div>
       </div>
