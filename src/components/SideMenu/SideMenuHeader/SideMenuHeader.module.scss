@@ -1,18 +1,15 @@
 @import "../../../assets/variables/colors.scss";
+@import "../../../assets/variables/mixins.scss";
 
 .mainContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  @include flex($justify: space-between);
   width: 26.8rem;
   height: 3.6rem;
   padding: 0.6rem 1rem;
   background-color: $chat-secondary-green;
 
   .leftContainer {
-    display: flex;
-    align-items: center;
+    @include flex($justify: flex-start);
     width: 13rem;
     .profilePicture {
       width: 2.5rem;

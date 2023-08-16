@@ -1,17 +1,15 @@
 @import "../../../assets/variables/colors.scss";
+@import "../../../assets/variables/mixins.scss";
 
 .mainContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include flex;
   width: 26.8rem;
   height: 3rem;
   padding-left: 0.75rem;
   background-color: $primary-black;
 
   .searchBar {
-    display: flex;
-    align-items: center;
+    @include flex($justify: flex-start);
     width: 23.5rem;
     height: 2.2rem;
     background-color: $chat-secondary-green;
