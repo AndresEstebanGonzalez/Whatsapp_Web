@@ -8,6 +8,10 @@ export default function CurrentChatTabsContainer() {
   return (
     <div className={styles.mainContainer}>
       <CurrentChatTabs />
+      <CurrentChatTabs />
+      <CurrentChatTabs />
+      <CurrentChatTabs />
+      <CurrentChatTabs />
       <div className={styles.bottomContainer}>
         <div className={styles.bottomTextContainer}>
           <FontAwesomeIcon icon={faLock} className={styles.lockIcon} />

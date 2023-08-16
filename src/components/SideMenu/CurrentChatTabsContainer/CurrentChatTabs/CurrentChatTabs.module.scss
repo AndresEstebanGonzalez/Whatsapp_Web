@@ -1,0 +1,63 @@
+@import "../../../../assets/variables/colors.scss";
+@import "../../../../assets/variables/mixins.scss";
+
+.mainContainer {
+  @include flex($justify: flex-start);
+  width: 26.8rem;
+  height: 4.5rem;
+  .leftContainer {
+    @include flex($justify: flex-start);
+    width: 4.8rem;
+    height: 4.5rem;
+    padding: 0 0.9rem;
+    .profilePicture {
+      height: 3rem;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+    }
+  }
+  .rightContainer {
+    @include flex($direction: column, $align: normal);
+    width: 24.7rem;
+    height: 4.5rem;
+    padding-right: 0.9rem;
+    border-top: solid $dark-grey 0.06rem;
+    .topContainer {
+      @include flex($justify: space-between, $align: normal);
+      height: 1.3rem;
+      .chatName {
+        font-weight: 400;
+        color: $white;
+      }
+      .lastMessageTime {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: $darker-icon-grey;
+      }
+    }
+    .bottomContainer {
+      @include flex($justify: space-between, $align: normal);
+      height: 1.3rem;
+      .bottomLeftContainer {
+        display: flex;
+        .checkMark {
+          width: 1.1rem;
+          margin-right: 0.1rem;
+          aspect-ratio: 1/1;
+          color: $light-blue;
+        }
+        .lastMessage {
+          font-weight: 400;
+          color: $darker-icon-grey;
+        }
+      }
+      .thumbTack {
+        height: 0.9rem;
+        aspect-ratio: 1/1;
+        color: $icon-grey;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
