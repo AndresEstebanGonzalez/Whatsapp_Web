@@ -1,15 +1,15 @@
-import styles from '../SideMenu/SideMenu.module.scss';
+import styles from "../SideMenu/SideMenu.module.scss";
 
-import SideMenuHeader from './SideMenuHeader/SideMenuHeader.jsx';
-import SearchContainer from './SearchContainer/SearchContainer.jsx';
-import CurrentChatTabs from './CurrentChatTabs/CurrentChatTabs.jsx'
+import SideMenuHeader from "./SideMenuHeader/SideMenuHeader.jsx";
+import SearchContainer from "./SearchContainer/SearchContainer.jsx";
+import CurrentChatTabsContainer from "./CurrentChatTabsContainer/CurrentChatTabsContainer.jsx";
 
 export default function SideMenu() {
-    return (
-        <>
-            <SideMenuHeader />
-            <SearchContainer />
-            <CurrentChatTabs />
-        </>
-    )
+  return (
+    <>
+      <SideMenuHeader />
+      <SearchContainer />
+      <CurrentChatTabsContainer />
+    </>
+  );
 }

@@ -1,0 +1,40 @@
+@import "../../../assets/variables/colors.scss";
+@import "../../../assets/variables/mixins.scss";
+
+.mainContainer {
+  width: 26.8rem;
+  height: 100%;
+  background-color: $primary-black;
+
+  .bottomContainer {
+    @include flex(column);
+  }
+  .bottomTextContainer {
+    @include flex;
+    margin: 1rem;
+    padding-top: 0.6rem;
+    border-top: solid $dark-grey 0.06rem;
+
+    .lockIcon {
+      width: 0.6rem;
+      height: 0.75rem;
+      margin-right: 0.3rem;
+      color: $darker-icon-grey;
+    }
+    .bottomText {
+      font-size: 0.75rem;
+      color: $darker-icon-grey;
+
+      .lightBlueEncryptedText {
+        padding: 0;
+        font-size: 0.75rem;
+        color: $light-blue;
+        background: none;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+      }
+    }
+  }
+}
