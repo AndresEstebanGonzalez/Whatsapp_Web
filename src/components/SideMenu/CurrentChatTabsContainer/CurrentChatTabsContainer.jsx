@@ -4,14 +4,16 @@ import CurrentChatTabs from "./CurrentChatTabs/CurrentChatTabs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 
+import chatDatabase from "../../../data.js";
+
 export default function CurrentChatTabsContainer() {
+  const CHAT = chatDatabase.map((chat) => {
+    return <CurrentChatTabs key={chat.id} chat={chat} />;
+  });
+
   return (
     <div className={styles.mainContainer}>
-      <CurrentChatTabs />
-      <CurrentChatTabs />
-      <CurrentChatTabs />
-      <CurrentChatTabs />
-      <CurrentChatTabs />
+      <div>{CHAT}</div>
       <div className={styles.bottomContainer}>
         <div className={styles.bottomTextContainer}>
           <FontAwesomeIcon icon={faLock} className={styles.lockIcon} />

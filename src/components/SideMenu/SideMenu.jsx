@@ -6,10 +6,10 @@ import CurrentChatTabsContainer from "./CurrentChatTabsContainer/CurrentChatTabs
 
 export default function SideMenu() {
   return (
-    <>
+    <div className={styles.sideMenuContainer}>
       <SideMenuHeader />
       <SearchContainer />
       <CurrentChatTabsContainer />
-    </>
+    </div>
   );
 }

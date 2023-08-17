@@ -3,8 +3,9 @@
 
 .mainContainer {
   width: 26.8rem;
-  height: 100%;
+  height: calc(100% - 6.6rem);
   background-color: $primary-black;
+  overflow-y: scroll;
 
   .bottomContainer {
     @include flex(column);
