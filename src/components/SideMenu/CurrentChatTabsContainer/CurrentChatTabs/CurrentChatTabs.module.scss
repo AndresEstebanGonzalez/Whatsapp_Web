@@ -5,6 +5,12 @@
   @include flex($justify: flex-start);
   width: 26.8rem;
   height: 4.5rem;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
   .leftContainer {
     @include flex($justify: flex-start);
     width: 4.8rem;
@@ -39,8 +45,9 @@
     .bottomContainer {
       @include flex($justify: space-between, $align: normal);
       height: 1.3rem;
+      margin-top: 0.1rem;
       .bottomLeftContainer {
-        display: flex;
+        @include flex($justify: flex-start);
         .checkMark {
           width: 1.1rem;
           margin-right: 0.1rem;
@@ -60,4 +67,8 @@
       }
     }
   }
+}
+
+.mainContainer:hover {
+  background-color: $lighter-icon-grey;
 }
