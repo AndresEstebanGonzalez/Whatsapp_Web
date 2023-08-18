@@ -6,7 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faThumbTack } from "@fortawesome/free-solid-svg-icons";
 
 export default function CurrentChatTabs(props) {
-  const { firstName, lastName, pictureUrl, message } = props.chat;
+  const { firstName, lastName, pictureUrl, isArchived, message } = props.chat;
+
+  const CHAT_TAB_DISPLAY = isArchived
+    ? { display: "none" }
+    : { display: "flex" };
 
   const CHECK_MARK_STYLE = message.isLastMessageRecieved
     ? { display: "none" }
@@ -15,7 +19,7 @@ export default function CurrentChatTabs(props) {
     : { color: "#aebac1" };
 
   return (
-    <div className={styles.mainContainer}>
+    <div className={styles.mainContainer} style={CHAT_TAB_DISPLAY}>
       <div className={styles.leftContainer}>
         <img
           src={pictureUrl}

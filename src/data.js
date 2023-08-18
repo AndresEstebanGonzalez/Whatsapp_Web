@@ -13,6 +13,7 @@ export default [
       isLastMessageRecieved: true,
       isLastMessageRead: false,
     },
+    isArchived: true,
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ export default [
       isLastMessageRecieved: true,
       isLastMessageRead: true,
     },
+    isArchived: false,
   },
   {
     id: 3,
@@ -39,6 +41,7 @@ export default [
       isLastMessageRecieved: false,
       isLastMessageRead: false,
     },
+    isArchived: true,
   },
   {
     id: 4,
@@ -52,6 +55,7 @@ export default [
       isLastMessageRecieved: true,
       isLastMessageRead: false,
     },
+    isArchived: false,
   },
   {
     id: 5,
@@ -65,6 +69,7 @@ export default [
       isLastMessageRecieved: false,
       isLastMessageRead: true,
     },
+    isArchived: false,
   },
   {
     id: 6,
@@ -78,6 +83,7 @@ export default [
       isLastMessageRecieved: false,
       isLastMessageRead: false,
     },
+    isArchived: false,
   },
   {
     id: 7,
@@ -91,6 +97,7 @@ export default [
       isLastMessageRecieved: true,
       isLastMessageRead: true,
     },
+    isArchived: false,
   },
   {
     id: 8,
@@ -104,6 +111,7 @@ export default [
       isLastMessageRecieved: true,
       isLastMessageRead: false,
     },
+    isArchived: false,
   },
   {
     id: 9,
@@ -117,6 +125,7 @@ export default [
       isLastMessageRecieved: false,
       isLastMessageRead: false,
     },
+    isArchived: false,
   },
   {
     id: 10,
@@ -130,6 +139,7 @@ export default [
       isLastMessageRecieved: false,
       isLastMessageRead: true,
     },
+    isArchived: false,
   },
   {
     id: 11,
@@ -143,6 +153,7 @@ export default [
       isLastMessageRecieved: false,
       isLastMessageRead: true,
     },
+    isArchived: false,
   },
   {
     id: 12,
@@ -156,6 +167,7 @@ export default [
       isLastMessageRecieved: true,
       isLastMessageRead: true,
     },
+    isArchived: false,
   },
   {
     id: 13,
@@ -169,6 +181,7 @@ export default [
       isLastMessageRecieved: true,
       isLastMessageRead: false,
     },
+    isArchived: false,
   },
   {
     id: 14,
@@ -182,6 +195,7 @@ export default [
       isLastMessageRecieved: true,
       isLastMessageRead: true,
     },
+    isArchived: false,
   },
   {
     id: 15,
@@ -195,5 +209,6 @@ export default [
       isLastMessageRecieved: true,
       isLastMessageRead: false,
     },
+    isArchived: false,
   },
 ];
